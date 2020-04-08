@@ -1,0 +1,22 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  issue:
+    description: The issue number
+    required: true
+  token:
+    description: 'GITHUB_TOKEN or a repo scoped PAT.'
+    required: true
+  owner:
+    description: 'The owner'
+  repository:
+    description: 'The github project'
+  body:
+    description: 'The comment body'
+    required: true
+outputs:
+  result: # just a string
+    description: 'A simple ok'
+runs:
+  using: 'node12'
+  main: 'index.js'
